@@ -21,8 +21,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.techinsidersaemaccs91</groupId>
-        <artifactId>aem-techinsidersaemaccs91-project</artifactId>
+        <groupId>com.techinsiderscitisignalaemaccs.commerce</groupId>
+        <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-techinsidersaemaccs91-project.ui.apps</artifactId>
+    <artifactId>com.techinsiderscitisignalaemaccs.commerce.ui.apps</artifactId>
     <packaging>content-package</packaging>
-    <name>techinsidersaemaccs91 - UI apps</name>
-    <description>UI apps package for techinsidersaemaccs91</description>
+    <name>Assets commerce integration - UI apps</name>
+    <description>UI apps package for Assets commerce integration</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
@@ -51,19 +51,14 @@
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <group>com.techinsidersaemaccs91</group>
-                    <name>aem-techinsidersaemaccs91-project.ui.apps</name>
+                    <group>com.techinsiderscitisignalaemaccs.commerce</group>
                     <packageType>application</packageType>
-                    <skipSubPackageValidation>true</skipSubPackageValidation>
-                    <accessControlHandling>merge</accessControlHandling>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
-                            <groupId>com.techinsidersaemaccs91</groupId>
-                            <artifactId>aem-techinsidersaemaccs91-project.ui.apps.structure</artifactId>
+                            <groupId>com.techinsiderscitisignalaemaccs.commerce</groupId>
+                            <artifactId>com.techinsiderscitisignalaemaccs.commerce.ui.apps.structure</artifactId>
                         </repositoryStructurePackage>
                     </repositoryStructurePackages>
-                    <dependencies>
-                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>
@@ -109,42 +104,22 @@
     <!-- ====================================================================== -->
     <dependencies>
         <dependency>
-            <groupId>com.techinsidersaemaccs91</groupId>
-            <artifactId>aem-techinsidersaemaccs91-project.core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.techinsidersaemaccs91</groupId>
-            <artifactId>aem-techinsidersaemaccs91-project.ui.frontend</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.techinsidersaemaccs91</groupId>
-            <artifactId>aem-techinsidersaemaccs91-project.ui.apps.structure</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-
-        <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
         </dependency>
 
-        <!-- AEM Forms Dependencies -->
-            <dependency>
-        <groupId>com.adobe.aem</groupId>
-        <artifactId>aem-forms-sdk-api</artifactId>
-      </dependency>
-                      <!-- HTL dependencies needed for the HTL Maven Plugin source code generation -->
+        <!-- HTL dependencies needed for the HTL Maven Plugin source code generation -->
         <dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.scripting.sightly.runtime</artifactId>
             <version>1.2.4-1.4.0</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.techinsiderscitisignalaemaccs.commerce</groupId>
+            <artifactId>com.techinsiderscitisignalaemaccs.commerce.ui.apps.structure</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
         </dependency>
     </dependencies>
 </project>

@@ -1,7 +1,0 @@
-{
-    "scripts": [
-        "create path (sling:OrderedFolder) /content/dam/techinsidersaemaccs91",
-        "create path (nt:unstructured) /content/dam/techinsidersaemaccs91/jcr:content",
-        "set properties on /content/dam/techinsidersaemaccs91/jcr:content\n  set cq:conf{String} to /conf/techinsidersaemaccs91\n  set jcr:title{String} to \"techinsidersaemaccs91\"\nend"
-    ]
-}

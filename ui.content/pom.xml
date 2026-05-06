@@ -21,8 +21,8 @@
     <!-- P A R E N T  P R O J E C T  D E S C R I P T I O N                      -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.techinsidersaemaccs91</groupId>
-        <artifactId>aem-techinsidersaemaccs91-project</artifactId>
+        <groupId>com.techinsiderscitisignalaemaccs.commerce</groupId>
+        <artifactId>parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -30,10 +30,10 @@
     <!-- ====================================================================== -->
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
-    <artifactId>aem-techinsidersaemaccs91-project.ui.content</artifactId>
+    <artifactId>com.techinsiderscitisignalaemaccs.commerce.ui.content</artifactId>
     <packaging>content-package</packaging>
-    <name>techinsidersaemaccs91 - UI content</name>
-    <description>UI content package for techinsidersaemaccs91</description>
+    <name>Assets commerce integration - UI content</name>
+    <description>UI content package for Assets commerce integration</description>
 
     <!-- ====================================================================== -->
     <!-- B U I L D   D E F I N I T I O N                                        -->
@@ -50,10 +50,8 @@
                     <properties>
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
-                    <group>com.techinsidersaemaccs91</group>
-                    <name>aem-techinsidersaemaccs91-project.ui.content</name>
+                    <group>com.techinsiderscitisignalaemaccs.commerce</group>
                     <packageType>content</packageType>
-                    <accessControlHandling>merge</accessControlHandling>
                     <validatorsSettings>
                         <jackrabbit-filter>
                             <options>
@@ -61,13 +59,6 @@
                             </options>
                         </jackrabbit-filter>
                     </validatorsSettings>
-                    <dependencies>
-                        <dependency>
-                            <groupId>com.techinsidersaemaccs91</groupId>
-                            <artifactId>aem-techinsidersaemaccs91-project.ui.apps</artifactId>
-                            <version>${project.version}</version>
-                        </dependency>
-                    </dependencies>
                 </configuration>
             </plugin>
             <plugin>
@@ -86,18 +77,7 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
-        <dependency>
-            <groupId>com.techinsidersaemaccs91</groupId>
-            <artifactId>aem-techinsidersaemaccs91-project.core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.techinsidersaemaccs91</groupId>
-            <artifactId>aem-techinsidersaemaccs91-project.ui.apps</artifactId>
-            <version>${project.version}</version>
-            <type>zip</type>
-        </dependency>
-        <dependency>
+       <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>aem-sdk-api</artifactId>
         </dependency>

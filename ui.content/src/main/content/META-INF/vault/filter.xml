@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/techinsidersaemaccs91" mode="merge"/>
-    <filter root="/content/techinsidersaemaccs91" mode="merge"/>
-    <filter root="/content/dam/techinsidersaemaccs91" mode="merge">
-        <exclude pattern="/content/dam/techinsidersaemaccs91(/.*)?"/>
-        <include pattern="/content/dam/techinsidersaemaccs91/jcr:content(/.*)?"/>
-    </filter>
-    <filter root="/content/dam/techinsidersaemaccs91/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/techinsidersaemaccs91" mode="merge"/>
-    <filter root="/content/dam/formsanddocuments-themes/techinsidersaemaccs91" mode="merge"/>
-    <filter root="/content/dam/formsanddocuments-fdm/techinsidersaemaccs91" mode="merge"/>
-    <filter root="/content/dam/techinsidersaemaccs91/sample_logo.png" mode="merge"/>
-    <filter root="/content/dam/techinsidersaemaccs91/sample_terms.png" mode="merge"/>
-    <filter root="/content/dam/techinsidersaemaccs91/wknd_logo.png" mode="merge"/>
+    <filter root="/conf/global/settings/dam/adminui-extension/metadataschema/default" mode="merge"/>
+    <filter root="/content/dam/wknd/en/activities/hiking/equipment_6.jpg" mode="merge"/>
 </workspaceFilter>

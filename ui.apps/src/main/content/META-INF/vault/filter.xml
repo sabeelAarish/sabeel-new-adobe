@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/apps/techinsidersaemaccs91/clientlibs"/>
-    <filter root="/apps/techinsidersaemaccs91/components"/>
-    <filter root="/apps/techinsidersaemaccs91/i18n"/>
-    <filter root="/apps/fd/af/themes" mode="merge"/>
-
+    <filter root="/apps/commerce"/>
+    <filter root="/apps/dam/gui/coral/components/admin/schemaforms/formbuilder/v2"/>
+    <filter root="/apps/dam/gui/coral/components/admin/schemaforms/formbuilder/formfields"/>
 </workspaceFilter>
